@@ -1,66 +1,62 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <script src="scripts/app.js"></script>
     <title>Proyecto Gestión</title>
 </head>
 
-<body>
+<body onload="cargar()">
     <header>
-        <div class="cont-header" id="cont-header"></div>
+        <div class="cont-header" id="cont-header">
+            <span>
+                <a href="/"> <img src="img/icon.png" alt="" /></a>
+            </span>
+
+            <ul>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Detalles</a></li>
+            </ul>
+        </div>
     </header>
-    
-    <main onload="cargar()">
+
+    <main>
         <div class="cont-main" id="cont-main">
-            <h1>Test</h1>
+            <h1>Gestión</h1>
+            <hr />
+            <div class="cuadro">
+                <label for="user">Usuario: </label>
+                <input name="user" id="user" type="text" placeholder="Nina" Usuario />
+                <br />
+                <label for="clave">Clave U: </label>
+                <input id="clave" type="password" Clave /><br />
+                <div class="cont-btn">
+                    <a href="profesor.html"><button class="btn-login" onclick="validar()">
+                            Ingresar
+                        </button></a>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer>
-        <div class="cont-footer" id="cont-footer"></div>
-    </footer>
-</body>
-
-=======
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <script src="scripts/app.js"></script>
-    <title>Proyecto Gestión</title>
-</head>
-
-<body>
-    <header>
-        <div class="cont-header" id="cont-header"></div>
-    </header>
-    
-    <main onload="cargar()">
-        <div class="cont-main" id="cont-main">
-            <h1>Test</h1>
+        <div class="cont-footer" id="cont-footer">
+            <p class="prf-firma">&copy; 2023 Company, Inc</p>
+            <ul class="nav">
+                <li classNamme="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">Detalles</a></li>
+            </ul>
         </div>
-    </main>
-
-    <footer>
-        <div class="cont-footer" id="cont-footer"></div>
     </footer>
 </body>
 
->>>>>>> 82d0c74b01b036437d30e4b6e4652995243dbae9
 </html>
